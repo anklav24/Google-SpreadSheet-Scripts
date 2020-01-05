@@ -12,7 +12,7 @@ function Force_ImportXML()  // Имя функции
   var numRows=sheet.getLastRow();
   var numColumns=sheet.getLastColumn();
 
-  for (var i = 1; i < 26; i++)  // Перебираем столбцы и записываем значения в них
+  for (var i = 1; i < numColumns + 1; i++)  // Перебираем столбцы одной строки и записываем значения в них
   // Начинаем от единицы потому что дальше функция не примет 0
   {
   var number = Math.floor(Math.random() * 1000) + 1;  // Генерируем случайное число от 1 до 1000
